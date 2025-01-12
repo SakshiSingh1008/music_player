@@ -1,0 +1,171 @@
+name: music_player
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  get: ^4.6.5
+  flutter_rating_bar: ^4.0.1
+  sleek_circular_slider: ^2.0.1
+  audio_service: ^0.18.11
+  just_audio: ^0.9.34
+  get_it: ^7.6.0
+  cached_network_image: ^3.2.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/img/app_logo.png
+    - assets/img/home_tab_un.png
+    - assets/img/songs_tab.png
+    - assets/img/setting_tab_un.png
+    - assets/img/home_tab.png
+    - assets/img/songs_tab_un.png
+    - assets/img/setting_tab.png
+    - assets/img/menu.png
+    - assets/img/search.png
+    - assets/img/img_1.png
+    - assets/img/img_2.png
+    - assets/img/img_3.png
+    - assets/img/img_4.png
+    - assets/img/img_5.png
+    - assets/img/play_btn.png
+    - assets/img/fav.png
+    - assets/img/m_theme.png
+    - assets/img/m_ring_cut.png
+    - assets/img/m_sleep_timer.png
+    - assets/img/m_eq.png
+    - assets/img/m_driver_mode.png
+    - assets/img/m_hidden_folder.png
+    - assets/img/m_scan_media.png
+    - assets/img/cover.jpg
+    - assets/img/add.png
+    - assets/img/alb_1.png
+    - assets/img/more_btn.png
+    - assets/img/alb_2.png
+    - assets/img/alb_3.png
+    - assets/img/alb_4.png
+    - assets/img/alb_5.png
+    - assets/img/alb_6.png
+    - assets/img/playlist_1.png
+    - assets/img/playlist_2.png
+    - assets/img/playlist_3.png
+    - assets/img/playlist_4.png
+    - assets/img/mp_1.png
+    - assets/img/mp_2.png
+    - assets/img/mp_3.png
+    - assets/img/mp_4.png
+    - assets/img/s_audio.png
+    - assets/img/s_display.png
+    - assets/img/s_headset.png
+    - assets/img/s_lock_screen.png
+    - assets/img/s_menu.png
+    - assets/img/s_other.png
+    - assets/img/ar_1.png
+    - assets/img/ar_2.png
+    - assets/img/ar_3.png
+    - assets/img/ar_4.png
+    - assets/img/ar_6.png
+    - assets/img/ar_d_1.png
+    - assets/img/ar_d_2.png
+    - assets/img/ar_d_3.png
+    - assets/img/ar_d_4.png
+    - assets/img/artitst_detail_top.png
+    - assets/img/b_player_next.png
+    - assets/img/b_player_previous.png
+    - assets/img/back.png
+    - assets/img/close.png
+    - assets/img/cover.jpg
+    - assets/img/eq_display.png
+    - assets/img/eq.png
+    - assets/img/gen_1.png
+    - assets/img/gen_2.png
+    - assets/img/gen_3.png
+    - assets/img/gen_4.png
+    - assets/img/gen_5.png
+    - assets/img/gen_6.png
+    - assets/img/gen_7.png
+    - assets/img/gen_8.png
+    - assets/img/more_btn.png
+    - assets/img/more.png
+    - assets/img/next_song.png
+    - assets/img/pause.png
+    - assets/img/play_eq.png
+    - assets/img/play.png
+    - assets/img/play_n.png
+    - assets/img/player_image.png
+    - assets/img/playlist.png
+    - assets/img/previous_song.png
+    - assets/img/repeat.png
+    - assets/img/s1.png
+    - assets/img/s2.png
+    - assets/img/s3.png
+    - assets/img/s4.png
+    - assets/img/s5.png
+    - assets/img/s6.png
+    - assets/img/s7.png
+    - assets/img/s9.png
+    - assets/img/s10.png
+    - assets/img/search.png
+    - assets/img/share.png
+    - assets/img/shuffle.png
+fonts:
+    - family: CircularStd
+      fonts:
+        - asset: assets/fonts/CircularStd-Book.otf
+          weight: 400
+        - asset: assets/fonts/CircularStd-Medium.otf
+          weight: 500
+        - asset: assets/fonts/CircularStd-Bold.otf
+          weight: 700
